@@ -1,0 +1,498 @@
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* signin */
+
+  .header {
+    background: url("/src/assets/login-bg-1.svg") no-repeat center/cover;
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+    height: 200px;
+    border-radius: 0px 0px 0px 80px;
+  }
+
+  .logo {
+    background: url("/src/assets/Logo.svg");
+    height: 80px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 450px;
+    margin-left: 120px;
+  }
+
+  .project-title {
+    color: white;
+    margin-right: 0px;
+  }
+
+  .signin-form {
+    background-color: white;
+    padding: 3rem;
+    margin-right: 0px;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 24rem;
+    box-shadow: none;
+  }
+
+  .signin-form p {
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+    font-size: 20px;
+    color: rgb(82, 79, 79);
+  }
+
+  .signin-form form div input {
+    padding: 8px;
+    width: 300px;
+  }
+
+  .signin-submit {
+    background-color: #0c4d97;
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+
+  /* dashboard */
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 0vh;
+  }
+
+
+  /* sidebar */
+  .sidebar {
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    gap: 40px;
+    padding: 25px;
+    margin-top: 50rem;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+  }
+
+  .links div a {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .links div {
+    position: relative;
+    margin-bottom: 15px;
+    /* Add space between buttons */
+  }
+
+  .box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: -1;
+    background-color: #0c4d97;
+  }
+
+  .logout {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    position: absolute;
+    left:430px;
+    top: 15px;
+    right: 30px;
+    z-index: 4;
+  }
+
+  /* homepage */
+  .homepage {
+    background-color: rgb(247, 243, 243);
+    height: 134vh;
+  }
+
+  .homepage-header {
+    background: url("/src/assets/Header-bg.svg") no-repeat center/cover;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 0px 60px;
+    height: 70px;
+    width: 80vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .homepage-titles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    justify-content: space-around;
+  }
+
+  .homepage-titles div p {
+    font-size: 23px;
+    color: white;
+    margin-left: 60px;
+    font-weight: 500;
+  }
+
+  .homepage-logo {
+    background: none;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 100px;
+    background-size: contain;
+    margin-left: 0rem;
+    position: relative;
+    bottom: 5px;
+  }
+
+  /* dashboard card */
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 40px;
+    row-gap: 0px;
+    margin-top: 30px;
+  }
+
+  .dashboard-card {
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 6px;
+    border-left: 5px solid rgb(230, 246, 249);
+    box-shadow: 2px 0px 10px 0px gray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .card-name,
+  .card-total {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  .card-name {
+    font-size: 16px;
+    color: rgb(94, 90, 90);
+    font-weight: 500;
+  }
+
+  .card-total {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .graph-name {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .graph {
+    width: 90%;
+    margin-left: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+
+
+
+  /* project form */
+
+  .createProject {
+    background-color: rgb(227, 227, 227);
+    height: 130vh;
+  }
+
+  .project-form {
+    position: relative;
+    bottom: 0px;
+    top: 20px;
+    background-color: white;
+    z-index: 1;
+    width: 30rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 110vh;
+    overflow: scroll;
+  }
+
+  .project-theme {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 30px;
+    justify-content: space-between;
+  }
+
+  .project-theme .form-group textarea {
+    width: 22rem;
+    height: 80px;
+    resize: none;
+    border: 1px solid gray;
+    margin-left: 20px;
+  }
+
+  .project-theme .form-group textarea::placeholder {
+    color: gray;
+  }
+
+  .project-submit button {
+    width: 80vw;
+    padding: 7px;
+    border-top: 20px;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #0c4d97;
+    cursor: pointer;
+    margin-top: 800px;
+  }
+
+  .project-selection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 0rem;
+    margin-left: 50px;
+    position: absolute;
+    top: 130px;
+  }
+
+  .project-selection .form-group label {
+    color: gray;
+  }
+
+  .project-selection .form-group select,
+  .project-selection .form-group input {
+    border: 1px solid gray;
+  }
+
+  .project-selection .form-group input,
+  .project-selection .form-group select {
+    width: 350px;
+  }
+
+
+ /* data table */
+
+ .dataTable{
+  display: none;
+ }
+
+.d-Table {
+  background-color: rgb(227, 227, 227);
+  height: 120vh;
+}
+
+.responsive-dataTable {
+  display: contents;
+  padding: 30px;
+  position: relative;
+  bottom: 40px;
+  left: 7px;
+  width: 92vw;
+  background-color: white;
+  border-radius: 10px;
+  height: 97vh;
+}
+
+.responsive-searchTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.responsive-search{
+  position: absolute;
+  left: 50px;
+  top: 19.2%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #aaa;
+}
+
+.responsive-sort {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(174, 167, 167);
+  padding-left: 40px;
+  font-size: 20px;
+  background-color: rgb(227, 227, 227);
+  width: 300px;
+}
+
+.sort::placeholder {
+  font-size: 20px;
+  color: rgb(192, 181, 181);
+}
+
+.responsive-card-parent{
+  height: 600px;
+  overflow: scroll;
+}
+
+.responsive-card{
+   border-radius: 10px;
+}
+
+.card-Row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.first-Row p,.second-Row p{
+  margin: 0;
+  padding: 0;
+}
+
+.bullet {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color:gray;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  left: 5px;
+}
+
+.responsive-title{
+  color:gray;
+}
+
+.responsive-data-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.responsive-data-btn button {
+  height: 30px;
+  padding: 0px;
+  font-size: 17px;
+}
+
+
+.responsive-status-btn {
+  width: 130px;
+  border: 2px solid #0c4d97;
+  background-color: white;
+  padding: 2px;
+  border-radius: 20px;
+  color: #0c4d97;
+  margin-left: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.responsive-status-btn-active {
+  background-color: #0c4d97;
+  color: white;
+  width: 130px;
+  border: 2px solid #0c4d97;
+  padding: 2px;
+  border-radius: 20px;
+  margin-left: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+  .responsive-filters-dropdown {
+    position: fixed;
+    top:20px;
+    right: 95px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .responsive-filters-dropdown button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+
+  .responsive-filters-dropdown button:focus {
+    background-color:white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+  }
+
+  .menu-bar{
+      border: none;
+      outline: none;
+      background-color: rgb(227, 227, 227);
+  }
+
+  .menu-bar img{
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,16 @@
+
+.create-project-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .create-project-container {
+    padding: 10px;
+  }
+}
